@@ -25,7 +25,7 @@
                     <img src="./assets/income.svg" alt="Imagem de Entradas">
 
                 </h3>
-                <p id="incomeDisplay"> R$ 5.000,00</p>
+                <p id="incomeDisplay"> </p>
             </div>
 
             <div class="card">
@@ -33,7 +33,7 @@
                     <span> Saidas </span>
                     <img src="./assets/expense.svg" alt="Imagem de Saídas">
                 </h3>
-                <p id="expenseDisplay">R$ 2.000,00</p>
+                <p id="expenseDisplay"></p>
             </div>
 
             <div class="card total">
@@ -41,7 +41,7 @@
                     <span>Total</span>
                     <img src="./assets/total.svg" alt="Imagem de Total">
                 </h3>
-                <p id="totalDisplay">R$ 3.000,00</p>
+                <p id="totalDisplay"></p>
             </div>
         </section>
 
@@ -109,7 +109,7 @@
                         </label>
                         <input 
                             type="text" 
-                            id="descriptions" 
+                            id="description" 
                             name="description"
                             placeholder="Descrição"
                         />
@@ -132,11 +132,12 @@
                                 for="date">Data
                             </label>
                             <input 
-                                type="text" 
+                                type="date" 
                                 id="date" 
                                 name="date"
                                 placeholder="01/01/2021"
                             />
+                            <small id="error"></small>
                             <div class="input-group actions">
                                 <a 
                                     href="#" 

@@ -89,6 +89,13 @@ button:hover{
 .button.cancel:hover{
     opacity: 1;
 }
+
+#error{
+    color: tomato;
+    display: flex;
+    justify-content: center;
+}
+
 /* HEADER  */
 header{
     background: #2D4a22;
@@ -234,8 +241,8 @@ input {
 .input-group{
     margin-top: 0.8rem;
 }
-.input-group small{
-    opacity: 0.4rem;
+.input-group .help{
+    opacity: 0.4;
 }
 
 .input-group.actions{
