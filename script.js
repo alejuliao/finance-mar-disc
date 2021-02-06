@@ -172,9 +172,12 @@ const DOM = {
 
 const Utils = {
     formatAmount(value){
-        // value = Number(value.replace(/\,\./g, "")) *100
-        value = Number(value) * 100
-        return value
+        // value = Number(value.replace(/\,?\.?/g, "")) *100
+        // value = Number(value) * 100
+        // return value
+
+        value = value * 100
+        return Math.round(value)
     },
     formatDate(date){
         const splittedDate = date.split("-")
