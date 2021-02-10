@@ -14,6 +14,9 @@ const Modal = {
         .querySelector('.modal-overlay')
         .classList
         .remove('active')
+        document
+        .getElementById('error')
+        .style.display = 'none';
     }
 }
 
@@ -26,32 +29,6 @@ const Storage = {
         JSON.stringify(transactions))
     }
 }
-// const transactions = [
-//     {
-//         id: 1,
-//         description: 'Luz',
-//         amount: -50001,
-//         date: '23/01/2021',
-//         },
-//         {
-//         id: 2,
-//         description: 'WEB',
-//         amount: 500000,
-//         date: '23/01/2021',
-//         },
-//         {
-//         id: 3,
-//         description: 'INTERNET',
-//         amount: -20012,
-//         date: '23/01/2021',
-//         },
-//         {
-//         id: 4,
-//         description: 'TV',
-//         amount: 200000,
-//         date: '23/01/2021',
-//         },
-// ]
 
 const Transaction = {
     // all: [{
@@ -259,8 +236,8 @@ const Form = {
         } catch(erro){
             const error = document.getElementById('error')
             error.innerHTML = (erro.message)
+            error.style.display = 'flex'
         }
-
     }
 }
 
